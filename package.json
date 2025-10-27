@@ -1,14 +1,15 @@
 {
   "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.72.8",
     "react-native-fs": "^2.20.0",
     "react-native-system-setting": "^1.7.6",
     "react-native-view-shot": "^4.0.3",
     "tesseract.js": "^6.0.1"
   },
   "devDependencies": {
-        "@react-native-community/cli": "latest",
+    "@react-native-community/cli": "^20.0.2",
     "@types/react": "^19.2.2",
     "@types/react-native": "^0.72.8"
-
   }
 }
