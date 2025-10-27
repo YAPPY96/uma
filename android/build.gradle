@@ -1,0 +1,26 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Use AGP 8.5.x which is compatible with Gradle 9.x
+        classpath 'com.android.tools.build:gradle:8.5.0'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        google()
+        maven { url(new File(rootDir, '../node_modules/react-native/android')) }
+    }
+}
+android {
+
+    lint {
+        checkReleaseBuilds = false
+        abortOnError = false
+    }
+}
